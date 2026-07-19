@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const notes = (await getCollection('technical-notes')).sort((a, b) => a.data.number - b.data.number);
+---
+
+<BaseLayout
+	title="Technical Notes"
+	description="Field-tested engineering technical notes on golf course drainage, sustainability, and machinery — from Maurice McKinley BSc CEng MICE."
+>
+	<section class="section section--tight hero">
+		<div class="container">
+			<span class="eyebrow">Technical Notes</span>
+			<h1>Engineering notes for course managers and greenkeepers</h1>
+			<p class="lede">
+				Short, practical technical notes originally published on LinkedIn, collected here as a
+				permanent reference. Read in order — each note builds on the last, from winter drainage
+				basics through to the business case for robotic mowing.
+			</p>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			{notes.length === 0 ? (
+				<p>No technical notes published yet — check back soon.</p>
+			) : (
+				<ol class="note-list">
+					{notes.map((note) => (
+						<li class="note-list__item">
+							<a href={`/technical-notes/${note.id}/`} class="note-list__thumb-link">
+								{note.data.thumbnail ? (
+									<img
+										class="note-list__thumb"
+										src={note.data.thumbnail}
+										alt=""
+										loading="lazy"
+									/>
+								) : (
+									<span class="note-list__thumb note-list__thumb--placeholder" aria-hidden="true" />
+								)}
+							</a>
+							<div class="note-list__body">
+								{note.data.draft && <span class="badge-draft">Draft — coming soon</span>}
+								<p class="note-card__meta">Technical Note {note.data.number}</p>
+								<h3><a href={`/technical-notes/${note.id}/`}>{note.data.title}</a></h3>
+								<p>{note.data.summary}</p>
+							</div>
+						</li>
+					))}
+				</ol>
+			)}
+		</div>
+	</section>
+</BaseLayout>

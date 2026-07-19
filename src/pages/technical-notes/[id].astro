@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+	const notes = await getCollection('technical-notes');
+	return notes.map((note) => ({
+		params: { id: note.id },
+		props: { note },
+	}));
+}
+
+const { note } = Astro.props;
+const { Content } = await render(note);
+const dateLabel = new Intl.DateTimeFormat('en-IE', { dateStyle: 'long' }).format(note.data.date);
+---
+
+<BaseLayout title={`Technical Note ${note.data.number}: ${note.data.title}`} description={note.data.summary}>
+	<article class="section">
+		<div class="container" style="max-width:60rem;">
+			<a href="/technical-notes/">← All Technical Notes</a>
+			{note.data.draft && <p><span class="badge-draft">Draft — coming soon</span></p>}
+			<p class="note-card__meta" style="margin-top:1.5rem;">
+				Technical Note {note.data.number} · {dateLabel}
+			</p>
+			<h1>{note.data.title}</h1>
+			<div>
+				{note.data.tags.map((tag) => (
+					<span class="tag">{tag}</span>
+				))}
+			</div>
+			<div class="prose" style="margin-top:2rem;">
+				<Content />
+			</div>
+		</div>
+	</article>
+</BaseLayout>

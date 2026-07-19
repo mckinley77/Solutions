@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const testimonials = [
+	{
+		club: 'Dunmurry Golf Club',
+		quote: [
+			"Following a very wet summer, autumn and winter in 2023, our Management Committee agreed to employ Maurice McKinley to advise us on how to effectively manage our drainage issues. Very quickly Maurice, with the help of members of our Greens Committee, identified how we could make better use of our existing drains together with adding some new drains to various parts of the course. He drew up excellently marked plans of the overall drainage system via drone footage and included these in a very professional report which allows us to carry out staged works to meet our budgets.",
+			'He has worked closely with the Greens Committee and following a presentation to Management Committee he was given approval to seek 3 quotations for works. Following receipt of these Maurice analysed Bills of Quantities and presented the club with a preferred supplier. Our works are starting in August.',
+			"During this process Maurice has always carried out his role in an extremely professional manner, understanding the club's needs whilst appreciating the constraint on funds available. He is always available to attend meetings and has built a great working relationship with the club. In summary, I would have no hesitation in recommending his services to any golf club seeking to improve their drainage systems.",
+		],
+		name: 'Colin Adair',
+		role: 'General Manager',
+	},
+	{
+		club: 'Whitehead Golf Club',
+		quote: [
+			"On recommendation, Maurice was invited to our Club to initially provide detailed advice on possible troublesome drainage route failures and how we could drain various newly developed very wet areas on the course. However over a short period of time it was clear Maurice could provide considerably more guidance across a range of course related issues. Maurice's knowledge and experience gained from numerous golf club programmes allowed him to quickly recognise our drainage problems and produced a range of solutions for the Club to consider. When drainage works started Maurice attended regularly to ensure the project was completed efficiently and within budget.",
+			"The personal relationships developed with our Head Greenkeeper and Green's Convenor during the initial review was so constructive and positive it led to Maurice developing a comprehensive drainage and course development plan which the Club will use as their template in the coming years as the budget dictates. We have no doubt these proposals will improve drainage and ease course maintenance to help the club progress and prosper in the years ahead.",
+			'We are happy to recommend Maurice to any golf club who face issues with any course related matter.',
+		],
+		name: 'Trevor Wright',
+		role: 'Hon. Secretary',
+	},
+	{
+		club: 'Holywood Golf Club',
+		quote: [
+			"I invited Maurice to Holywood GC to seek his assistance with the creation of a multi-year course development plan. I was immediately impressed with Maurice's knowledge, skills, experience and enthusiasm and also with his desire to deliver a first class service.",
+			'Maurice initially assisted with the design and construction of our very well-received new putting green. He then delivered a detailed and wide-ranging course plan with in-depth coverage of issues such as drainage, teeing area development, pathways, boundary issues and maintenance costs.',
+			"Maurice's report explored a range of potential solutions to existing problems which could then be tailored to available budgets. Overall, it provided excellent VFM. We are currently taking forward and building on many of his recommendations and I would highly recommend Maurice's assistance with all course-related issues.",
+		],
+		name: 'Ciaran Murphy',
+		role: 'Chair of Golf Committee',
+		date: '15 February 2024',
+	},
+	{
+		club: 'Portadown Golf Club',
+		quote: [
+			'I invited Maurice to visit Portadown Golf Club to see if he could help us improve the drainage on our course. I was very impressed with his enthusiasm and after only one visit I knew he would be able to give us good advice.',
+			'He produced a comprehensive report that not only dealt with drainage but also included improvements on the layout of the course to make it more enjoyable for the higher handicapped players but still remain a challenge for the lower handicapped players.',
+			'Maurice was very aware of the financial restraints and everything he suggested could be done without spending a vast amount of money. Every hole on the course had a before and after picture showing recommended changes to fairway definition, bunkers, teeing areas, paths and even tree and shrub placements.',
+			'The report has given me, as Greens Convenor, a first class document to take to the Council and members for approval and I am looking forward to making a start as soon as possible.',
+		],
+		name: 'Gordon Willis',
+		role: 'Greens Convenor',
+		date: '26 November 2020',
+	},
+	{
+		club: 'Lurgan Golf Club',
+		quote: [
+			'Thank you for your tremendously valued and appreciated report on the drainage of our course, it will be extremely useful in both the short and medium terms for future development.',
+			'I hope that your business venture is thriving around other golf clubs. Tom did mention that he had spoken to other clubs about the high quality of your work. Please feel free to use this letter as a testimonial for anyone requesting a reference.',
+		],
+		name: 'Sean Wilson',
+		role: 'Honorary Secretary',
+		date: '21 August 2021',
+	},
+	{
+		club: 'Spa Golf Club',
+		quote: [
+			'In order to deal with poor drainage throughout the winter months, causing the course to be very wet underfoot, we set up a meeting with Maurice to discuss the issue and how we could best resolve it. It became apparent very quickly that his knowledge, experience and expertise would be of huge benefit in terms of drainage management for the course.',
+			'Through detailed diagrams and several course walks, we followed his advice and the issue was resolved and green fee revenue increased dramatically, particularly in the troublesome winter months. The overall presentation all year has improved and membership has also increased.',
+			'The club had limited funds but, even with those budgetary restraints, with drains in the correct place, better rough management and appropriately placed walkways, the whole course became a much better experience for members and visitors. Easy to follow diagrams and contour maps made the jobs of the Head Greenkeeper, Greens Convenor, Professional and contractor much easier.',
+			"I can't recommend Maurice enough, give him a chance at your course and watch him make a difference.",
+		],
+		name: 'Gary Wardlow',
+		role: 'Club Professional',
+		date: '17 May 2021',
+	},
+	{
+		club: 'Fortwilliam Golf Club',
+		quote: [
+			"Fortwilliam Golf Course is a clay-based parkland course situated in North Belfast. Over the years, the course has invested in drainage programmes with limited success.",
+			"2023 was an extremely wet year, leaving the course unplayable. Due to the soft, saturated ground conditions, machinery couldn't get out to cut the grass. Maurice saw our dilemma and offered his services to help identify and solve the problems. The objective of Simple Design Solutions is to help clubs improve drainage and winter golf conditions at a low cost with minimal disruption.",
+			"Where possible, they deliver affordable solutions by repairing or replacing existing drainage pipes. To this end, Maurice opened several inspection holes to determine if the existing pipes were functioning properly. Unfortunately, the majority were in a poor state, so Maurice came up with a plan of action. He supervised the agreed work, which included cutting trenches, laying pipes and gravel, and installing manholes and inspection chambers. He was consistently on site to supervise the work, ensuring it was completed to a high standard.",
+			"He delivered an excellent presentation at our 2025 AGM, which helped secure a proposed course levy. Thanks to Maurice's informative delivery, the proposal was unanimously adopted.",
+			"His drainage and development reports for Dunmurry and Whitehead were so impressive that we commissioned a similar report for Fortwilliam. This will be used as a reference document for years to come.",
+			"Maurice is passionate about his work and takes great pride in helping clubs overcome their drainage problems at an affordable cost. We are very fortunate to have his expert advice on the development of our course.",
+			"The Greens Committee would highly recommend Maurice (Simple Design Solutions) for his professionalism and expertise.",
+		],
+		name: 'Tony Campbell',
+		role: 'Greens Committee',
+		date: '2025',
+	},
+	// Add further testimonials here — same shape as above.
+];
+---
+
+<BaseLayout
+	title="Testimonials"
+	description="What Northern Ireland golf clubs say about working with Maurice McKinley on drainage and course development projects."
+>
+	<section class="section section--tight hero">
+		<div class="container">
+			<span class="eyebrow">Testimonials</span>
+			<h1>What clients say</h1>
+			<p class="lede">
+				Feedback from golf clubs Maurice has worked with on drainage and course development
+				projects across Northern Ireland.
+			</p>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<div class="testimonial-list">
+				{testimonials.map((t) => (
+					<article class="card testimonial-card">
+						<h3>{t.club}</h3>
+						{t.quote.map((paragraph) => (
+							<p class="testimonial-quote">{paragraph}</p>
+						))}
+						<p class="testimonial-attribution">
+							{t.name}
+							<span>{t.role}, {t.club}{t.date ? ` · ${t.date}` : ''}</span>
+						</p>
+					</article>
+				))}
+			</div>
+		</div>
+	</section>
+</BaseLayout>

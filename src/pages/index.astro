@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const notes = (await getCollection('technical-notes'))
+	.filter((note) => !note.data.draft)
+	.sort((a, b) => b.data.number - a.data.number);
+
+const latestNote = (await getCollection('technical-notes')).sort(
+	(a, b) => b.data.number - a.data.number
+)[0];
+---
+
+<BaseLayout
+	title="Home"
+	description="The Sustainable Golf Course Project — practical drainage and sustainability guidance for golf courses managing wet winters and short playing seasons, led by Maurice McKinley BSc CEng MICE."
+>
+	<section class="hero">
+		<div class="container hero__grid">
+			<div>
+				<span class="eyebrow">The Sustainable Golf Course Project</span>
+				<h1>Drier courses, longer seasons, lower inputs.</h1>
+				<p class="lede">
+					Ireland's wet winters cut playing seasons short and drive up maintenance costs. This
+					project brings together practical drainage engineering and a wider sustainability
+					agenda — water management, resource-efficient machinery, and course resilience — so
+					golf courses can stay open longer and run leaner.
+				</p>
+				<div class="hero__actions">
+					<a class="btn btn--primary" href="/sustainability/">Explore Sustainability</a>
+					<a class="btn btn--ghost" href="/drainage/">Drainage Solutions</a>
+				</div>
+			</div>
+			<img
+				class="hero__image"
+				src="/images/hero.jpg"
+				alt="A golf green beside a pond, with a wooden bridge, reeds, and mature trees under a clear evening sky"
+			/>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<span class="eyebrow">Why this project exists</span>
+			<h2>Two problems, one root cause</h2>
+			<p class="lede">
+				A saturated course loses playing days, compacts under traffic, and needs more inputs to
+				recover — the opposite of a sustainable operation. Getting water off the course quickly
+				and using resources deliberately are the same discipline, not two separate agendas.
+			</p>
+			<div class="grid grid--3" style="margin-top:2.5rem;">
+				<div class="card">
+					<span class="tag tag--water">Water</span>
+					<h3>Drainage</h3>
+					<p>
+						Low-cost, high-impact drainage interventions that get greens, tees, and fairways
+						playable faster after rain — engineered, not guessed at.
+					</p>
+					<a href="/drainage/">Read more →</a>
+				</div>
+				<div class="card">
+					<span class="tag">Sustainability</span>
+					<h3>Resource efficiency</h3>
+					<p>
+						Reducing fuel, labour, and input costs while improving course condition — from
+						robotic mowing to smarter surveying and course mapping.
+					</p>
+					<a href="/sustainability/">Read more →</a>
+				</div>
+				<div class="card">
+					<span class="tag tag--earth">Knowledge</span>
+					<h3>Technical Notes</h3>
+					<p>
+						Field-tested engineering notes on drainage, machinery, and course management,
+						written for greenkeepers and course managers.
+					</p>
+					<a href="/technical-notes/">Browse notes →</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{latestNote && (
+		<section class="section section--alt">
+			<div class="container">
+				<span class="eyebrow">Latest Technical Note</span>
+				<div class="card note-card" style="max-width:40rem;">
+					{latestNote.data.draft && <span class="badge-draft">Draft — coming soon</span>}
+					<p class="note-card__meta">Technical Note {latestNote.data.number}</p>
+					<h3><a href={`/technical-notes/${latestNote.id}/`}>{latestNote.data.title}</a></h3>
+					<p>{latestNote.data.summary}</p>
+					<a href={`/technical-notes/${latestNote.id}/`}>Read the note →</a>
+				</div>
+			</div>
+		</section>
+	)}
+
+	<section class="section">
+		<div class="container">
+			<div class="card" style="display:flex; flex-wrap:wrap; gap:1.5rem; align-items:center; justify-content:space-between;">
+				<div>
+					<h2 style="margin-top:0;">Free introductory consultation</h2>
+					<p style="margin-bottom:0; max-width:34rem;">
+						A half-day, no-obligation consultation to look at your drainage and sustainability
+						priorities and where the quickest wins are.
+					</p>
+				</div>
+				<a class="btn btn--primary" href="/contact/">Get in touch</a>
+			</div>
+		</div>
+	</section>
+</BaseLayout>

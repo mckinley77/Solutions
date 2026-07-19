@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const placeholders = [
+	'Drainage installation in progress',
+	'Before / after: waterlogged fairway',
+	'Course survey work',
+	'Completed outfall / ditch clearance',
+	'Robotic mower on course',
+	'Structural / bridge work',
+];
+---
+
+<BaseLayout
+	title="Gallery"
+	description="Photos of drainage, survey, and sustainability projects on golf courses."
+>
+	<section class="section section--tight hero">
+		<div class="container">
+			<span class="eyebrow">Gallery</span>
+			<h1>Project photos</h1>
+			<p class="lede">
+				Real project photos are being carried over from the previous site — this page is wired
+				up and ready for them. Drop images into <code>public/images/gallery/</code> and swap out
+				the placeholders below.
+			</p>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<div class="grid grid--3">
+				{placeholders.map((caption) => (
+					<div>
+						<div class="image-placeholder">Placeholder photo</div>
+						<p style="font-size:0.9rem; margin-top:0.5rem;">{caption}</p>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+</BaseLayout>
