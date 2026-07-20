@@ -16,14 +16,19 @@ const isCurrent = (href: string) =>
 ---
 
 <header class="site-header">
-	<div class="site-header__inner">
+	<div class="site-header__top">
 		<a href="/" class="brand">
 			<span class="brand__name">The Sustainable Golf Course Project</span>
 			<span class="brand__tag">Drainage &amp; Sustainability — Maurice McKinley BSc CEng MICE</span>
 		</a>
-		<button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
-			Menu
-		</button>
+		<div class="site-header__actions">
+			<a class="btn btn--primary btn--small" href="/contact/">Get in touch</a>
+			<button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+				Menu
+			</button>
+		</div>
+	</div>
+	<div class="site-header__bottom">
 		<nav class="site-nav" id="site-nav">
 			{navItems.map((item) => (
 				<a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
