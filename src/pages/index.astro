@@ -16,26 +16,32 @@ const latestNote = (await getCollection('technical-notes')).sort(
 	description="The Sustainable Golf Course Project — practical drainage and sustainability guidance for golf courses managing wet winters and short playing seasons, led by Maurice McKinley BSc CEng MICE."
 >
 	<section class="hero">
-		<div class="container hero__grid">
-			<div>
-				<span class="eyebrow">The Sustainable Golf Course Project</span>
-				<h1>Drier courses, longer seasons, lower inputs.</h1>
-				<p class="lede">
-					Ireland's wet winters cut playing seasons short and drive up maintenance costs. This
-					project brings together practical drainage engineering and a wider sustainability
-					agenda — water management, resource-efficient machinery, and course resilience — so
-					golf courses can stay open longer and run leaner.
-				</p>
-				<div class="hero__actions">
-					<a class="btn btn--primary" href="/sustainability/">Explore Sustainability</a>
-					<a class="btn btn--ghost" href="/drainage/">Drainage Solutions</a>
+		<div class="container">
+			<h1>Drier courses, longer seasons, lower costs.</h1>
+			<div class="hero__grid">
+				<div>
+					<div class="hero__panel">
+						<p class="lede">
+							Ireland's more frequent wet winters cut playing seasons short and drive up
+							maintenance costs.
+						</p>
+						<p class="lede">
+							This project brings together practical drainage engineering and wider
+							sustainability objectives — water management, resource-efficient machinery, and
+							course resilience — so golf courses can stay open longer and lower their costs.
+						</p>
+					</div>
+					<div class="hero__actions">
+						<a class="btn btn--primary" href="/sustainability/">Explore Sustainability</a>
+						<a class="btn btn--ghost" href="/drainage/">Drainage Solutions</a>
+					</div>
 				</div>
+				<img
+					class="hero__image"
+					src="/images/hero.jpg"
+					alt="A golf green beside a pond, with a wooden bridge, reeds, and mature trees under a clear evening sky"
+				/>
 			</div>
-			<img
-				class="hero__image"
-				src="/images/hero.jpg"
-				alt="A golf green beside a pond, with a wooden bridge, reeds, and mature trees under a clear evening sky"
-			/>
 		</div>
 	</section>
 
