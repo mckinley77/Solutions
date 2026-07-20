@@ -379,7 +379,7 @@ p {
 
 .hero {
 	background: linear-gradient(180deg, var(--color-green-100) 0%, var(--color-bg) 100%);
-	padding: 3rem 0 2.5rem;
+	padding: 3rem 0 1.5rem;
 }
 
 .hero__grid {
@@ -414,13 +414,6 @@ p {
 	border-radius: var(--radius);
 	box-shadow: var(--shadow);
 	border: 1px solid var(--color-border);
-}
-
-.hero__actions {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.9rem;
-	margin-top: 1.75rem;
 }
 
 /* Footer */
