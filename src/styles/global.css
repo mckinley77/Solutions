@@ -59,6 +59,7 @@ h1, h2, h3, h4 {
 	color: var(--color-ink);
 	line-height: 1.2;
 	font-weight: 700;
+	margin: 0 0 0.5em;
 }
 
 h1 {
@@ -73,6 +74,10 @@ h3 {
 	font-size: 1.25rem;
 }
 
+p {
+	margin: 0 0 1em;
+}
+
 .container {
 	max-width: var(--max-width);
 	margin: 0 auto;
@@ -80,11 +85,11 @@ h3 {
 }
 
 .section {
-	padding: 4rem 0;
+	padding: 3rem 0;
 }
 
 .section--tight {
-	padding: 2.5rem 0;
+	padding: 2rem 0;
 }
 
 .section--alt {
@@ -106,7 +111,7 @@ h3 {
 .lede {
 	font-size: 1.15rem;
 	color: var(--color-body);
-	max-width: 46rem;
+	max-width: 54rem;
 }
 
 .btn {
@@ -288,7 +293,7 @@ h3 {
 }
 
 .brand__logo {
-	height: 44px;
+	height: 68px;
 	width: auto;
 }
 
@@ -355,7 +360,7 @@ h3 {
 
 .hero {
 	background: linear-gradient(180deg, var(--color-green-100) 0%, var(--color-bg) 100%);
-	padding: 4.5rem 0 3.5rem;
+	padding: 3rem 0 2.5rem;
 }
 
 .hero__grid {
