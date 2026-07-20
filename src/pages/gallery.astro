@@ -1,13 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const placeholders = [
-	'Drainage installation in progress',
-	'Before / after: waterlogged fairway',
-	'Course survey work',
-	'Completed outfall / ditch clearance',
-	'Robotic mower on course',
-	'Structural / bridge work',
+const photos = [
+	{ src: '/images/gallery/drainage-installation.jpg', caption: 'Drainage installation — new pipe runs across the fairway' },
+	{ src: '/images/gallery/tee-before.jpg', caption: 'Before: worn tee surrounds' },
+	{ src: '/images/gallery/tee-after.jpg', caption: 'After: tee surrounds restored' },
+	{ src: '/images/gallery/completed-outfall.jpg', caption: 'Completed outfall coping with high flow' },
+	{ src: '/images/gallery/retaining-wall.jpg', caption: 'Retaining wall — bank stabilisation' },
+	{ src: '/images/gallery/course-survey.jpg', caption: 'Course survey — Shandon Park GC, 17th fairway' },
+	{ src: '/images/gallery/course-context-1.jpg', caption: 'Course context' },
+	{ src: '/images/gallery/course-context-2.jpg', caption: 'Course context' },
+	{ src: '/images/technical-notes/robotic-mower-on-course.jpg', caption: 'Robotic mower on course' },
 ];
 ---
 
@@ -19,20 +22,16 @@ const placeholders = [
 		<div class="container">
 			<span class="eyebrow">Gallery</span>
 			<h1>Project photos</h1>
-			<p class="lede">
-				Real project photos are being carried over from the previous site — this page is wired
-				up and ready for them. Drop images into <code>public/images/gallery/</code> and swap out
-				the placeholders below.
-			</p>
+			<p class="lede">Photos from drainage, survey, and structural projects on golf courses.</p>
 		</div>
 	</section>
 
 	<section class="section">
 		<div class="container">
 			<div class="grid grid--3">
-				{placeholders.map((caption) => (
+				{photos.map(({ src, caption }) => (
 					<div>
-						<div class="image-placeholder">Placeholder photo</div>
+						<img src={src} alt={caption} style="width:100%; height:auto; border-radius:8px;" />
 						<p style="font-size:0.9rem; margin-top:0.5rem;">{caption}</p>
 					</div>
 				))}
