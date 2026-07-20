@@ -288,13 +288,32 @@ p {
 .brand {
 	display: flex;
 	align-items: center;
+	gap: 0.9rem;
 	text-decoration: none;
 	min-width: 0;
 }
 
 .brand__logo {
-	height: 68px;
+	height: 56px;
 	width: auto;
+	flex-shrink: 0;
+}
+
+.brand__name {
+	font-size: 1.3rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	color: var(--color-green-600);
+	line-height: 1.1;
+	white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+	.brand__name {
+		font-size: 0.95rem;
+		white-space: normal;
+	}
 }
 
 .btn--small {
