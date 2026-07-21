@@ -444,25 +444,29 @@ p {
 
 .hero {
 	background: linear-gradient(180deg, var(--color-green-100) 0%, var(--color-bg) 100%);
-	padding: 3rem 0 1.5rem;
+	padding-bottom: 1.5rem;
 }
 
-.hero__grid {
-	display: grid;
-	grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
-	gap: 2.5rem;
-	align-items: stretch;
-	margin-top: 2rem;
+.hero__banner {
+	overflow: hidden;
 }
 
-@media (max-width: 900px) {
-	.hero__grid {
-		grid-template-columns: 1fr;
-	}
+.hero__banner-image {
+	display: block;
+	width: 100%;
+	height: 28rem;
+	object-fit: cover;
+	transform: scaleX(-1);
+}
 
-	.hero__image-wrap {
-		min-height: 20rem;
+@media (max-width: 640px) {
+	.hero__banner-image {
+		height: 14rem;
 	}
+}
+
+.hero__content {
+	padding-top: 2rem;
 }
 
 .hero__panel {
@@ -471,26 +475,15 @@ p {
 	border-radius: var(--radius);
 	padding: 1.75rem 1.75rem 1.75rem 0.5rem;
 	box-shadow: var(--shadow);
+	margin-top: 1.5rem;
+}
+
+.hero__panel .lede {
+	max-width: 56rem;
 }
 
 .hero__panel .lede:last-child {
 	margin-bottom: 0;
-}
-
-.hero__image-wrap {
-	position: relative;
-	border-radius: var(--radius);
-	box-shadow: var(--shadow);
-	border: 1px solid var(--color-border);
-	overflow: hidden;
-}
-
-.hero__image {
-	position: absolute;
-	inset: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
 }
 
 /* Footer */
