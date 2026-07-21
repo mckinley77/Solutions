@@ -51,14 +51,50 @@ const photos = [
 
 	<section class="section">
 		<div class="container">
-			<div class="grid grid--3">
+			<div class="gallery-masonry">
 				{photos.map(({ src, caption }) => (
-					<div>
-						<img src={src} alt={caption} style="width:100%; height:auto; border-radius:8px;" />
-						<p style="font-size:0.9rem; margin-top:0.5rem;">{caption}</p>
+					<div class="gallery-masonry__item">
+						<img src={src} alt={caption} />
+						<p>{caption}</p>
 					</div>
 				))}
 			</div>
 		</div>
 	</section>
 </BaseLayout>
+
+<style>
+	.gallery-masonry {
+		columns: 3;
+		column-gap: 1.75rem;
+	}
+
+	.gallery-masonry__item {
+		break-inside: avoid;
+		margin-bottom: 1.75rem;
+	}
+
+	.gallery-masonry img {
+		display: block;
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+	}
+
+	.gallery-masonry p {
+		margin: 0.5rem 0 0;
+		font-size: 0.9rem;
+	}
+
+	@media (max-width: 900px) {
+		.gallery-masonry {
+			columns: 2;
+		}
+	}
+
+	@media (max-width: 560px) {
+		.gallery-masonry {
+			columns: 1;
+		}
+	}
+</style>
