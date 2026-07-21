@@ -52,15 +52,40 @@ const photos = [
 	<section class="section">
 		<div class="container">
 			<div class="gallery-masonry">
-				{photos.map(({ src, caption }) => (
+				{photos.map(({ src, caption }, index) => (
 					<div class="gallery-masonry__item">
-						<img src={src} alt={caption} />
+						<button
+							type="button"
+							class="gallery-masonry__trigger"
+							data-src={src}
+							data-caption={caption}
+							data-index={index}
+							aria-label={`View larger image: ${caption}`}
+						>
+							<img src={src} alt={caption} loading="lazy" />
+						</button>
 						<p>{caption}</p>
 					</div>
 				))}
 			</div>
 		</div>
 	</section>
+
+	<div class="lightbox" id="lightbox" aria-hidden="true">
+		<button type="button" class="lightbox__close" id="lightbox-close" aria-label="Close">
+			&times;
+		</button>
+		<button type="button" class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Previous image">
+			&#8249;
+		</button>
+		<button type="button" class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Next image">
+			&#8250;
+		</button>
+		<figure class="lightbox__figure">
+			<img class="lightbox__image" id="lightbox-image" src="" alt="" />
+			<figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
+		</figure>
+	</div>
 </BaseLayout>
 
 <style>
@@ -97,4 +122,180 @@ const photos = [
 			columns: 1;
 		}
 	}
+
+	.gallery-masonry__trigger {
+		display: block;
+		width: 100%;
+		padding: 0;
+		border: none;
+		background: none;
+		cursor: zoom-in;
+	}
+
+	.gallery-masonry__trigger img {
+		transition: opacity 0.15s ease;
+	}
+
+	.gallery-masonry__trigger:hover img,
+	.gallery-masonry__trigger:focus-visible img {
+		opacity: 0.85;
+	}
+
+	.lightbox {
+		display: none;
+		position: fixed;
+		inset: 0;
+		z-index: 100;
+		background: rgba(16, 38, 28, 0.92);
+		align-items: center;
+		justify-content: center;
+		padding: 3rem 1rem;
+	}
+
+	.lightbox.is-open {
+		display: flex;
+	}
+
+	.lightbox__figure {
+		margin: 0;
+		max-width: 90vw;
+		max-height: 85vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.75rem;
+	}
+
+	.lightbox__image {
+		display: block;
+		max-width: 90vw;
+		max-height: 76vh;
+		width: auto;
+		height: auto;
+		border-radius: 8px;
+		box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+	}
+
+	.lightbox__caption {
+		color: #f4f7f5;
+		font-size: 0.95rem;
+		text-align: center;
+	}
+
+	.lightbox__close,
+	.lightbox__nav {
+		position: fixed;
+		background: rgba(255, 255, 255, 0.1);
+		color: #ffffff;
+		border: none;
+		border-radius: 999px;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		line-height: 1;
+		transition: background 0.15s ease;
+	}
+
+	.lightbox__close:hover,
+	.lightbox__nav:hover {
+		background: rgba(255, 255, 255, 0.22);
+	}
+
+	.lightbox__close {
+		top: 1.25rem;
+		right: 1.25rem;
+		width: 2.75rem;
+		height: 2.75rem;
+		font-size: 1.75rem;
+	}
+
+	.lightbox__nav {
+		top: 50%;
+		transform: translateY(-50%);
+		width: 3rem;
+		height: 3rem;
+		font-size: 2rem;
+	}
+
+	.lightbox__nav--prev {
+		left: 1rem;
+	}
+
+	.lightbox__nav--next {
+		right: 1rem;
+	}
+
+	@media (max-width: 640px) {
+		.lightbox__nav {
+			width: 2.5rem;
+			height: 2.5rem;
+			font-size: 1.5rem;
+		}
+
+		.lightbox__close {
+			top: 0.75rem;
+			right: 0.75rem;
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+	}
 </style>
+
+<script>
+	const triggers = Array.from(
+		document.querySelectorAll<HTMLButtonElement>('.gallery-masonry__trigger')
+	);
+	const lightbox = document.getElementById('lightbox');
+	const lightboxImage = document.getElementById('lightbox-image') as HTMLImageElement | null;
+	const lightboxCaption = document.getElementById('lightbox-caption');
+	const closeBtn = document.getElementById('lightbox-close');
+	const prevBtn = document.getElementById('lightbox-prev');
+	const nextBtn = document.getElementById('lightbox-next');
+
+	let currentIndex = 0;
+
+	function show(index: number) {
+		if (!lightbox || !lightboxImage || !lightboxCaption) return;
+		const total = triggers.length;
+		currentIndex = (index + total) % total;
+		const trigger = triggers[currentIndex];
+		lightboxImage.src = trigger.dataset.src ?? '';
+		lightboxImage.alt = trigger.dataset.caption ?? '';
+		lightboxCaption.textContent = trigger.dataset.caption ?? '';
+	}
+
+	function open(index: number) {
+		if (!lightbox) return;
+		show(index);
+		lightbox.classList.add('is-open');
+		lightbox.setAttribute('aria-hidden', 'false');
+		document.body.style.overflow = 'hidden';
+	}
+
+	function close() {
+		if (!lightbox) return;
+		lightbox.classList.remove('is-open');
+		lightbox.setAttribute('aria-hidden', 'true');
+		document.body.style.overflow = '';
+	}
+
+	triggers.forEach((trigger, index) => {
+		trigger.addEventListener('click', () => open(index));
+	});
+
+	closeBtn?.addEventListener('click', close);
+	prevBtn?.addEventListener('click', () => show(currentIndex - 1));
+	nextBtn?.addEventListener('click', () => show(currentIndex + 1));
+
+	lightbox?.addEventListener('click', (event) => {
+		if (event.target === lightbox) close();
+	});
+
+	document.addEventListener('keydown', (event) => {
+		if (!lightbox?.classList.contains('is-open')) return;
+		if (event.key === 'Escape') close();
+		if (event.key === 'ArrowLeft') show(currentIndex - 1);
+		if (event.key === 'ArrowRight') show(currentIndex + 1);
+	});
+</script>
