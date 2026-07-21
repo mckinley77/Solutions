@@ -2,7 +2,7 @@
 title: "Managing Traffic and Compaction in Wet Conditions"
 number: 3
 date: 2026-04-02
-summary: "Part 3 of 5: much of the damage seen on golf courses during wet winters is caused by traffic on saturated ground, not a lack of drainage — practical ways to manage it."
+summary: "Part 3 of 5: much of the damage seen on golf courses during wet winters is caused by traffic on saturated ground, not a lack of drainage - practical ways to manage it."
 tags: ["drainage", "compaction", "course management", "winter"]
 thumbnail: "/images/technical-notes/technical-note-03-hero.jpg"
 draft: false

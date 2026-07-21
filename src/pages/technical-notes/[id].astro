@@ -19,7 +19,7 @@ const dateLabel = new Intl.DateTimeFormat('en-IE', { dateStyle: 'long' }).format
 	<article class="section">
 		<div class="container" style="max-width:60rem;">
 			<a href="/technical-notes/">← All Technical Notes</a>
-			{note.data.draft && <p><span class="badge-draft">Draft — coming soon</span></p>}
+			{note.data.draft && <p><span class="badge-draft">Draft - coming soon</span></p>}
 			<p class="note-card__meta" style="margin-top:1.5rem;">
 				Technical Note {note.data.number} · {dateLabel}
 			</p>

@@ -2,7 +2,7 @@
 title: "Robotic Mowing and Winter Playability"
 number: 4
 date: 2026-04-12
-summary: "Why golf clubs should take robotic mowing seriously — lighter machines mean less damage on saturated ground, denser turf, and a longer effective cutting season."
+summary: "Why golf clubs should take robotic mowing seriously, lighter machines mean less damage on saturated ground, denser turf, and a longer effective cutting season."
 tags: ["sustainability", "mowing", "equipment", "winter"]
 thumbnail: "/images/technical-notes/technical-note-04-hero.jpg"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 *Why Golf Clubs Should Take It Seriously*
 
-![Split comparison graphic: a robotic mower on a fairway captioned "Robotic Mowing for Routine Cutting — Year-Round Cutting on Soft Fairways, Quiet & Efficient, Works Day & Night", next to a ride-on mower striping a fairway captioned "Conventional Mowing for Presentation & Striping — Highest Quality Finish, Classic Fairway Stripes"](/images/technical-notes/technical-note-04-hero.jpg)
+![Split comparison graphic: a robotic mower on a fairway captioned "Robotic Mowing for Routine Cutting - Year-Round Cutting on Soft Fairways, Quiet & Efficient, Works Day & Night", next to a ride-on mower striping a fairway captioned "Conventional Mowing for Presentation & Striping - Highest Quality Finish, Classic Fairway Stripes"](/images/technical-notes/technical-note-04-hero.jpg)
 
 ## Introduction
 
@@ -52,7 +52,7 @@ Robotic mowers are significantly lighter than conventional machines. This reduce
 - Surface smearing
 - Compaction in wet conditions
 
-**In simple terms: less weight means less damage — and a longer cutting season.**
+**In simple terms: less weight means less damage, and a longer cutting season.**
 
 ## The best of both worlds
 

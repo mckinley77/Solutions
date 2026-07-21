@@ -13,7 +13,7 @@ const latestNote = (await getCollection('technical-notes')).sort(
 
 <BaseLayout
 	title="Home"
-	description="The Sustainable Golf Course Project — practical drainage and sustainability guidance for golf courses managing wet winters and short playing seasons, led by Maurice McKinley BSc CEng MICE."
+	description="The Sustainable Golf Course Project - practical drainage and sustainability guidance for golf courses managing wet winters and short playing seasons, led by Maurice McKinley BSc CEng MICE."
 >
 	<section class="hero">
 		<div class="container">
@@ -27,8 +27,8 @@ const latestNote = (await getCollection('technical-notes')).sort(
 						</p>
 						<p class="lede">
 							This project brings together practical drainage engineering and wider
-							sustainability objectives — water management, resource-efficient machinery, and
-							course resilience — so golf courses can stay open longer and lower their costs.
+							sustainability objectives, water management, resource-efficient machinery, and
+							course resilience, so golf courses can stay open longer and lower their costs.
 						</p>
 					</div>
 				</div>
@@ -49,7 +49,7 @@ const latestNote = (await getCollection('technical-notes')).sort(
 			<h2>Two problems, one root cause</h2>
 			<p class="lede">
 				A saturated course loses playing days, compacts under traffic, and needs more inputs to
-				recover — the opposite of a sustainable operation. Getting water off the course quickly
+				recover, the opposite of a sustainable operation. Getting water off the course quickly
 				and using resources deliberately are the same discipline, not two separate agendas.
 			</p>
 			<div class="grid grid--3" style="margin-top:2.5rem;">
@@ -58,7 +58,7 @@ const latestNote = (await getCollection('technical-notes')).sort(
 					<h3>Drainage</h3>
 					<p>
 						Low-cost, high-impact drainage interventions that get greens, tees, and fairways
-						playable faster after rain — engineered, not guessed at.
+						playable faster after rain, engineered, not guessed at.
 					</p>
 					<a href="/drainage/">Read more →</a>
 				</div>
@@ -66,7 +66,7 @@ const latestNote = (await getCollection('technical-notes')).sort(
 					<span class="tag">Sustainability</span>
 					<h3>Resource efficiency</h3>
 					<p>
-						Reducing fuel, labour, and input costs while improving course condition — from
+						Reducing fuel, labour, and input costs while improving course condition, from
 						robotic mowing to smarter surveying and course mapping.
 					</p>
 					<a href="/sustainability/">Read more →</a>
@@ -89,7 +89,7 @@ const latestNote = (await getCollection('technical-notes')).sort(
 			<div class="container">
 				<span class="eyebrow">Latest Technical Note</span>
 				<div class="card note-card" style="max-width:40rem;">
-					{latestNote.data.draft && <span class="badge-draft">Draft — coming soon</span>}
+					{latestNote.data.draft && <span class="badge-draft">Draft - coming soon</span>}
 					<p class="note-card__meta">Technical Note {latestNote.data.number}</p>
 					<h3><a href={`/technical-notes/${latestNote.id}/`}>{latestNote.data.title}</a></h3>
 					<p>{latestNote.data.summary}</p>

@@ -2,7 +2,7 @@
 title: "Planning Now for a Better Winter"
 number: 7
 date: 2026-06-05
-summary: "The best winter surfaces are created months earlier — a round-up of low-cost checks and interventions worth doing in late summer and early autumn, while ground conditions are firm."
+summary: "The best winter surfaces are created months earlier - a round-up of low-cost checks and interventions worth doing in late summer and early autumn, while ground conditions are firm."
 tags: ["drainage", "winter", "course management"]
 thumbnail: "/images/technical-notes/technical-note-07-hero.jpg"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 *The best winter surfaces are created months earlier.*
 
-![Two photos: a firm, well-striped autumn fairway captioned "How to get this", above a photo of the same fairway waterlogged with standing water captioned "Instead of this — without major cost or disruption"](/images/technical-notes/technical-note-07-hero.jpg)
+![Two photos: a firm, well-striped autumn fairway captioned "How to get this", above a photo of the same fairway waterlogged with standing water captioned "Instead of this, without major cost or disruption"](/images/technical-notes/technical-note-07-hero.jpg)
 
 ## Introduction
 
@@ -33,18 +33,18 @@ This note brings together some practical, low-cost measures to improve winter pl
 
 Here's a simple way to reduce flooding on sloping fairways without extensive works:
 
-![Diagram titled "Control Surface Flow — Reduce Winter Damage": without surface flow control, water flows downslope and saturates the rough near a stream; with surface flow control, cut-off drains in the rough intercept surface flow before it reaches the fairway, keeping it drier](/images/technical-notes/technical-note-07-surface-flow-control.jpg)
+![Diagram titled "Control Surface Flow - Reduce Winter Damage": without surface flow control, water flows downslope and saturates the rough near a stream; with surface flow control, cut-off drains in the rough intercept surface flow before it reaches the fairway, keeping it drier](/images/technical-notes/technical-note-07-surface-flow-control.jpg)
 
 ## 1. Checks on your existing drainage system
 
 Before committing to heavy spending on new drains it's wise to check if existing drains are sufficient or can take extra connections. Many clubs replace drains that still have decades of potential life remaining.
 
-- **Trial pits** — open trial pits on important or troublesome drains to see if they are working. They can often be tested by scraping off the turf over a gravel drain and simply pouring water into the gravel. If it flows away quickly it's likely the drain is functioning, but continue on down with more tests until you reach the outfall.
-- **Dye testing** — environmentally friendly dyes can be used to trace the direction of your drains, but be careful not to use too much. It can take a long time for dye to reach an outfall and you don't want to cause any concerns downstream.
-- **Drone surveys** — if we are lucky enough to get a spell of warm dry weather it can be very useful to get a drone survey, as old drains often show up.
-- **Open manholes** — open up any existing manholes to check on flow or potential blockages.
-- **Level surveys** — if there is any doubt about suitable gradients, check levels using a professional surveyor if possible. Drains laid with inadequate fall can silt up and fail.
-- **Professional advice** — professional advice can often reduce unnecessary cost and disruption by helping clubs optimise layouts and construction methods.
+- **Trial pits** - open trial pits on important or troublesome drains to see if they are working. They can often be tested by scraping off the turf over a gravel drain and simply pouring water into the gravel. If it flows away quickly it's likely the drain is functioning, but continue on down with more tests until you reach the outfall.
+- **Dye testing** - environmentally friendly dyes can be used to trace the direction of your drains, but be careful not to use too much. It can take a long time for dye to reach an outfall and you don't want to cause any concerns downstream.
+- **Drone surveys** - if we are lucky enough to get a spell of warm dry weather it can be very useful to get a drone survey, as old drains often show up.
+- **Open manholes** - open up any existing manholes to check on flow or potential blockages.
+- **Level surveys** - if there is any doubt about suitable gradients, check levels using a professional surveyor if possible. Drains laid with inadequate fall can silt up and fail.
+- **Professional advice** - professional advice can often reduce unnecessary cost and disruption by helping clubs optimise layouts and construction methods.
 
 ## 2. Refreshing gravel drains
 

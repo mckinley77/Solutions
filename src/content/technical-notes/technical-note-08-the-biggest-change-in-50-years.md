@@ -2,7 +2,7 @@
 title: "The Biggest Change in Golf Course Maintenance for 50 Years?"
 number: 8
 date: 2026-07-04
-summary: "Why commercial robotic mowers have reached the point where every golf club should evaluate them — not mainly for labour savings, but for more mowing days and more golf."
+summary: "Why commercial robotic mowers have reached the point where every golf club should evaluate them, not mainly for labour savings, but for more mowing days and more golf."
 tags: ["sustainability", "mowing", "equipment"]
 thumbnail: "/images/technical-notes/technical-note-08-hero.jpg"
 draft: false
@@ -142,6 +142,6 @@ Every golf club is different, and robotic mowing won't be the right answer for e
 
 ---
 
-**Next Technical Note — [The Business Case for Robotic Mowing](/technical-notes/technical-note-09-robotic-mowing/)**
+**Next Technical Note - [The Business Case for Robotic Mowing](/technical-notes/technical-note-09-robotic-mowing/)**
 
 *Can a hybrid approach pay for itself? We compare conventional and robotic fairway maintenance for a typical golf club.*

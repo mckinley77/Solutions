@@ -7,7 +7,7 @@ const notes = (await getCollection('technical-notes')).sort((a, b) => a.data.num
 
 <BaseLayout
 	title="Technical Notes"
-	description="Field-tested engineering technical notes on golf course drainage, sustainability, and machinery — from Maurice McKinley BSc CEng MICE."
+	description="Field-tested engineering technical notes on golf course drainage, sustainability, and machinery - from Maurice McKinley BSc CEng MICE."
 >
 	<section class="section section--tight hero">
 		<div class="container">
@@ -15,7 +15,7 @@ const notes = (await getCollection('technical-notes')).sort((a, b) => a.data.num
 			<h1>Engineering notes for course managers and greenkeepers</h1>
 			<p class="lede">
 				Short, practical technical notes originally published on LinkedIn, collected here as a
-				permanent reference. Read in order — each note builds on the last, from winter drainage
+				permanent reference. Read in order, each note builds on the last, from winter drainage
 				basics through to the business case for robotic mowing.
 			</p>
 		</div>
@@ -24,7 +24,7 @@ const notes = (await getCollection('technical-notes')).sort((a, b) => a.data.num
 	<section class="section">
 		<div class="container">
 			{notes.length === 0 ? (
-				<p>No technical notes published yet — check back soon.</p>
+				<p>No technical notes published yet - check back soon.</p>
 			) : (
 				<ol class="note-list">
 					{notes.map((note) => (
@@ -42,7 +42,7 @@ const notes = (await getCollection('technical-notes')).sort((a, b) => a.data.num
 								)}
 							</a>
 							<div class="note-list__body">
-								{note.data.draft && <span class="badge-draft">Draft — coming soon</span>}
+								{note.data.draft && <span class="badge-draft">Draft - coming soon</span>}
 								<p class="note-card__meta">Technical Note {note.data.number}</p>
 								<h3><a href={`/technical-notes/${note.id}/`}>{note.data.title}</a></h3>
 								<p>{note.data.summary}</p>

@@ -2,7 +2,7 @@
 title: "Why Golf Course Drainage Stops Working"
 number: 6
 date: 2026-04-26
-summary: "Drainage systems require periodic maintenance to keep functioning — how gravel drains seal over, how to refresh them, and where gravel banding, verti-draining and shockwave aeration fit in."
+summary: "Drainage systems require periodic maintenance to keep functioning - how gravel drains seal over, how to refresh them, and where gravel banding, verti-draining and shockwave aeration fit in."
 tags: ["drainage", "maintenance", "course management"]
 thumbnail: "/images/technical-notes/technical-note-06-hero.jpg"
 draft: false
@@ -20,7 +20,7 @@ A common assumption is that once installed, drains will continue to function ind
 
 In practice, this is rarely the case.
 
-Over time, performance declines — often gradually — until problems begin to reappear. These are frequently attributed to unusually wet conditions, but in many cases the real issue is that the drainage system is no longer functioning as intended.
+Over time, performance declines, often gradually, until problems begin to reappear. These are frequently attributed to unusually wet conditions, but in many cases the real issue is that the drainage system is no longer functioning as intended.
 
 **Key points for golf clubs**
 
@@ -45,7 +45,7 @@ Over time, the surface of these drains often:
 
 As a result, water no longer reaches the drains efficiently, even though the pipe system itself may still be functioning, as shown below.
 
-![Diagram of a gravel drain cross-section in three stages: a new drain where water enters freely, after 2 years where flow is restricted, and after 5 years where the surface is sealed over — captioned "The pipe still works, the surface above it does not"](/images/technical-notes/technical-note-06-figure1-diagram.jpg)
+![Diagram of a gravel drain cross-section in three stages: a new drain where water enters freely, after 2 years where flow is restricted, and after 5 years where the surface is sealed over - captioned "The pipe still works, the surface above it does not"](/images/technical-notes/technical-note-06-figure1-diagram.jpg)
 
 ## 2. Refreshing gravel drains
 
@@ -65,7 +65,7 @@ As a general guide:
 
 **This allows water to enter the drains again and usually restores their effectiveness.**
 
-### Refreshing a drain — restoring performance
+### Refreshing a drain - restoring performance
 
 ![Three photos in sequence: a greenkeeper using a turf cutter to cut the surface along a drain line, the resulting open trench with the sealed layer removed, and the finished drain line topped with clean gravel](/images/technical-notes/technical-note-06-refresh-sequence.jpg)
 
@@ -92,7 +92,7 @@ Even a well-maintained system will not function if the outlet is blocked. Common
 
 Regular inspection is simple and often overlooked.
 
-## 5. Gravel banding — a useful tool, not a solution
+## 5. Gravel banding - a useful tool, not a solution
 
 Gravel banding is not a primary drainage system.
 
@@ -138,7 +138,7 @@ However:
 
 It can be effective on permeable soils and may reduce the need for extensive drainage systems.
 
-## 7. Shockwave aeration — where it fits
+## 7. Shockwave aeration - where it fits
 
 Shockwave machines are now widely used on golf courses to relieve compaction and improve surface permeability. They work by:
 
@@ -162,7 +162,7 @@ Their effectiveness is therefore greatest where:
 
 As with other aeration techniques, the benefits can be temporary and treatments may need to be repeated.
 
-> Shockwave aeration is a useful maintenance tool — not a substitute for proper drainage.
+> Shockwave aeration is a useful maintenance tool, not a substitute for proper drainage.
 
 ## 8. A maintenance mindset
 
@@ -184,4 +184,4 @@ Many drainage systems continue to function well below their potential simply bec
 
 Restoring existing drains is often straightforward, far less disruptive, and significantly more cost-effective than installing new systems.
 
-> The key is not just installing drainage — but keeping it working effectively.
+> The key is not just installing drainage, but keeping it working effectively.

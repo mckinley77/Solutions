@@ -2,7 +2,7 @@
 title: "The Business Case for Robotic Mowing"
 number: 9
 date: 2026-07-19
-summary: "A practical framework for assessing robotic fairway mowing — the measurable annual cash costs alongside harder-to-quantify benefits like winter playability, reduced compaction, and released greenkeeper capacity."
+summary: "A practical framework for assessing robotic fairway mowing - the measurable annual cash costs alongside harder-to-quantify benefits like winter playability, reduced compaction, and released greenkeeper capacity."
 tags: ["sustainability", "mowing", "cost analysis", "equipment", "business case"]
 thumbnail: "/images/technical-notes/robotic-mower-on-course.jpg"
 draft: false
@@ -38,8 +38,8 @@ The Golf Robot Business Case Calculator has therefore been developed to help clu
 measurable annual cash costs of conventional and robotic mowing, while recognising that many
 important operational benefits cannot easily be expressed in financial terms.
 
-It is intended to support informed discussion by Greens Committees, Course Managers, and Treasurers
-— rather than promote any particular manufacturer or system. In this early phase of robotic mower
+It is intended to support informed discussion by Greens Committees, Course Managers, and Treasurers,
+rather than promote any particular manufacturer or system. In this early phase of robotic mower
 development, it is likely that many clubs will choose to retain one or more conventional mowers and
 that robots will be part of a "hybrid" system, which is what the Calculator assumes.
 
@@ -150,6 +150,6 @@ Only by considering both can the overall business case for robotic mowing be pro
 
 ## Related publications
 
-- Technical Note 8 — *The Biggest Change in 50 Years*
+- Technical Note 8, *The Biggest Change in 50 Years*
 - Golf Robot Business Case Calculator
-- TN9 — *Instructions for Using the Calculator*
+- TN9, *Instructions for Using the Calculator*

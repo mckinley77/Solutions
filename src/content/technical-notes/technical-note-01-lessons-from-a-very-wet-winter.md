@@ -8,7 +8,7 @@ thumbnail: "/images/technical-notes/technical-note-01-hero.jpg"
 draft: false
 ---
 
-*Preparing Golf Courses for the Next Wet Season — Part 1 of 5*
+*Preparing Golf Courses for the Next Wet Season - Part 1 of 5*
 
 ![A flooded golf green and fairway after heavy rain, with standing water in the foreground and a bunker partly submerged](/images/technical-notes/technical-note-01-hero.jpg)
 

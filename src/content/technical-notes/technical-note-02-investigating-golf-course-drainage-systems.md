@@ -2,7 +2,7 @@
 title: "Investigating Golf Course Drainage Systems"
 number: 2
 date: 2026-03-24
-summary: "Part 2 of 5: how to understand an existing drainage system — locating drains, checking outfalls, trial pits, compaction, and surface water movement — before installing more."
+summary: "Part 2 of 5: how to understand an existing drainage system, locating drains, checking outfalls, trial pits, compaction, and surface water movement, before installing more."
 tags: ["drainage", "site investigation", "course management"]
 thumbnail: "/images/technical-notes/technical-note-02-hero.jpg"
 draft: false

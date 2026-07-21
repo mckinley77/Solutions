@@ -1,5 +1,5 @@
 ---
-title: "After a Wet Winter — What Should Golf Clubs Do Now?"
+title: "After a Wet Winter - What Should Golf Clubs Do Now?"
 number: 5
 date: 2026-04-19
 summary: "Practical steps to improve summer conditions and prepare for next winter: short grass, wide paths, recording damage, and planning ahead while there's time to act."
