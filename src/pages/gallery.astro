@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const photos = [
+const photos: { src: string; caption: string; description?: string }[] = [
 	{ src: '/images/gallery/17th-fairway-survey.jpg', caption: '17th Fairway Survey' },
 	{ src: '/images/gallery/8th-fairway-survey.png', caption: '8th Fairway Survey' },
 	{ src: '/images/gallery/8th-future-drainage.png', caption: '8th Future Drainage' },
@@ -52,13 +52,14 @@ const photos = [
 	<section class="section">
 		<div class="container">
 			<div class="gallery-masonry">
-				{photos.map(({ src, caption }, index) => (
+				{photos.map(({ src, caption, description }, index) => (
 					<div class="gallery-masonry__item">
 						<button
 							type="button"
 							class="gallery-masonry__trigger"
 							data-src={src}
 							data-caption={caption}
+							data-description={description ?? ''}
 							data-index={index}
 							aria-label={`View larger image: ${caption}`}
 						>
@@ -84,6 +85,7 @@ const photos = [
 		<figure class="lightbox__figure">
 			<img class="lightbox__image" id="lightbox-image" src="" alt="" />
 			<figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
+			<p class="lightbox__description" id="lightbox-description" hidden></p>
 		</figure>
 	</div>
 </BaseLayout>
@@ -182,6 +184,15 @@ const photos = [
 		text-align: center;
 	}
 
+	.lightbox__description {
+		margin: 0;
+		max-width: 40rem;
+		color: #d4dfd9;
+		font-size: 0.9rem;
+		line-height: 1.5;
+		text-align: center;
+	}
+
 	.lightbox__close,
 	.lightbox__nav {
 		position: fixed;
@@ -249,6 +260,7 @@ const photos = [
 	const lightbox = document.getElementById('lightbox');
 	const lightboxImage = document.getElementById('lightbox-image') as HTMLImageElement | null;
 	const lightboxCaption = document.getElementById('lightbox-caption');
+	const lightboxDescription = document.getElementById('lightbox-description');
 	const closeBtn = document.getElementById('lightbox-close');
 	const prevBtn = document.getElementById('lightbox-prev');
 	const nextBtn = document.getElementById('lightbox-next');
@@ -256,13 +268,16 @@ const photos = [
 	let currentIndex = 0;
 
 	function show(index: number) {
-		if (!lightbox || !lightboxImage || !lightboxCaption) return;
+		if (!lightbox || !lightboxImage || !lightboxCaption || !lightboxDescription) return;
 		const total = triggers.length;
 		currentIndex = (index + total) % total;
 		const trigger = triggers[currentIndex];
 		lightboxImage.src = trigger.dataset.src ?? '';
 		lightboxImage.alt = trigger.dataset.caption ?? '';
 		lightboxCaption.textContent = trigger.dataset.caption ?? '';
+		const description = trigger.dataset.description ?? '';
+		lightboxDescription.textContent = description;
+		lightboxDescription.hidden = description === '';
 	}
 
 	function open(index: number) {
