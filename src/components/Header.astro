@@ -7,6 +7,7 @@ const navItems = [
 	{ href: '/services/', label: 'Services' },
 	{ href: '/gallery/', label: 'Gallery' },
 	{ href: '/testimonials/', label: 'Testimonials' },
+	{ href: '/contact/', label: 'Contact', mobileOnly: true },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -33,7 +34,11 @@ const isCurrent = (href: string) =>
 	<div class="site-header__bottom">
 		<nav class="site-nav" id="site-nav">
 			{navItems.map((item) => (
-				<a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+				<a
+					href={item.href}
+					class={item.mobileOnly ? 'site-nav__mobile-only' : undefined}
+					aria-current={isCurrent(item.href) ? 'page' : undefined}
+				>
 					{item.label}
 				</a>
 			))}

@@ -408,7 +408,15 @@ p {
 	border-bottom-color: var(--color-green-600);
 }
 
+.site-nav__mobile-only {
+	display: none;
+}
+
 @media (max-width: 780px) {
+	.site-nav__mobile-only {
+		display: inline;
+	}
+
 	.nav-toggle {
 		display: inline-flex;
 	}
