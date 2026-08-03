@@ -27,17 +27,21 @@ const latestNote = (await getCollection('technical-notes')).sort(
 			<h1 class="hero__tagline">Drier courses, longer playing seasons, lower costs.</h1>
 			<div class="hero__panel">
 				<p class="lede">
-					Running a golf course sustainably means protecting the environment, conserving
-					water, managing trees and habitats, reducing emissions, keeping proper records
-					instead of starting fresh each year, and avoiding the expense of solving the same
-					problem twice.
+					<strong>A well-run golf course can cost less to run, not more!</strong>
 				</p>
 				<p class="lede">
-					Ireland's wetter winters have made all of it harder, with shorter playing seasons
-					and rising costs. This project takes a practical, low-cost approach across the
-					board, from drainage engineering to the efficient practices that keep a course
-					healthy everywhere else, so clubs can stay open longer, spend less, and do it all
-					without costing the earth.
+					This project takes a practical, low-cost approach to drainage, machinery, and
+					everyday course management, helping courses stay drier, open longer, spend less,
+					and avoid paying twice to fix the same problem, while protecting water, trees, and
+					habitats along the way.
+				</p>
+				<p class="lede">
+					Ireland's wetter winters have made all of this harder, with shorter playing seasons
+					and rising costs, which is exactly why the approach matters now.
+				</p>
+				<p class="lede">
+					<em><strong>The objective:</strong> a course members are proud of... without costing the
+					earth.</em>
 				</p>
 			</div>
 		</div>
@@ -123,5 +127,9 @@ const latestNote = (await getCollection('technical-notes')).sort(
 <style>
 	.section {
 		padding: 2.25rem 0;
+	}
+
+	.hero + .section {
+		padding-top: 1rem;
 	}
 </style>
