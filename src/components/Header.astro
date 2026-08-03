@@ -7,7 +7,6 @@ const navItems = [
 	{ href: '/services/', label: 'Services' },
 	{ href: '/gallery/', label: 'Gallery' },
 	{ href: '/testimonials/', label: 'Testimonials' },
-	{ href: '/contact/', label: 'Contact' },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -19,10 +18,13 @@ const isCurrent = (href: string) =>
 	<div class="site-header__top">
 		<a href="/" class="brand">
 			<img class="brand__logo" src="/images/logo-icon.png" alt="" />
-			<span class="brand__name">The Sustainable Golf Course Project</span>
+			<span class="brand__text">
+				<span class="brand__name">Golf that Doesn't Cost the Earth</span>
+				<span class="brand__tagline">The Sustainable Golf Course Project</span>
+			</span>
 		</a>
 		<div class="site-header__actions">
-			<a class="btn btn--primary btn--small" href="/contact/">Get in touch</a>
+			<a class="btn btn--primary btn--small" href="/contact/">Contact</a>
 			<button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
 				Menu
 			</button>
