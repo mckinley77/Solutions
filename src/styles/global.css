@@ -302,7 +302,7 @@ p {
 
 .site-header__top {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: space-between;
 	gap: 0.75rem 1.5rem;
@@ -344,7 +344,7 @@ p {
 }
 
 .brand__name {
-	font-size: clamp(1.15rem, 2.4vw, 1.6rem);
+	font-size: clamp(1.15rem, 3.2vw, 2.1rem);
 	font-weight: 800;
 	color: var(--color-ink);
 	line-height: 1.15;
@@ -375,28 +375,60 @@ p {
 
 .nav-toggle {
 	display: none;
+	align-items: center;
+	gap: 0.5rem;
 	background: none;
 	border: 1px solid var(--color-border);
 	border-radius: var(--radius);
 	padding: 0.5rem 0.7rem;
+	color: var(--color-green-700);
 	cursor: pointer;
+}
+
+.nav-toggle__icon,
+.nav-toggle__icon::before,
+.nav-toggle__icon::after {
+	display: block;
+	width: 18px;
+	height: 2px;
+	background: currentColor;
+	border-radius: 1px;
+}
+
+.nav-toggle__icon {
+	position: relative;
+}
+
+.nav-toggle__icon::before,
+.nav-toggle__icon::after {
+	content: '';
+	position: absolute;
+	left: 0;
+}
+
+.nav-toggle__icon::before {
+	top: -6px;
+}
+
+.nav-toggle__icon::after {
+	top: 6px;
 }
 
 .site-nav {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: space-between;
 	gap: 0.5rem 1.75rem;
 	max-width: var(--max-width);
 	margin: 0 auto;
-	padding: 0.85rem 1.5rem;
+	padding: 1rem 1.5rem;
 }
 
 .site-nav a {
 	color: var(--color-green-700);
 	text-decoration: none;
-	font-weight: 600;
-	font-size: 0.95rem;
+	font-weight: 700;
+	font-size: 1.1rem;
 	padding-bottom: 0.3rem;
 	border-bottom: 2px solid transparent;
 	transition: color 0.15s ease, border-color 0.15s ease;
@@ -457,6 +489,7 @@ p {
 	.site-nav {
 		display: none;
 		flex-direction: column;
+		justify-content: flex-start;
 		align-items: flex-start;
 		width: 100%;
 		gap: 0.9rem;
