@@ -96,13 +96,35 @@ const latestNote = (await getCollection('technical-notes')).sort(
 	{latestNote && (
 		<section class="section section--alt">
 			<div class="container">
-				<span class="eyebrow">Latest Technical Note</span>
-				<div class="card note-card" style="max-width:40rem;">
-					{latestNote.data.draft && <span class="badge-draft">Draft - coming soon</span>}
-					<p class="note-card__meta">Technical Note {latestNote.data.number}</p>
-					<h3><a href={`/technical-notes/${latestNote.id}/`}>{latestNote.data.title}</a></h3>
-					<p>{latestNote.data.summary}</p>
-					<a href={`/technical-notes/${latestNote.id}/`}>Read the note →</a>
+				<div class="grid grid--2">
+					<div class="card note-card">
+						<span class="eyebrow">Latest Technical Note</span>
+						{latestNote.data.draft && <span class="badge-draft">Draft - coming soon</span>}
+						<p class="note-card__meta">Technical Note {latestNote.data.number}</p>
+						<h3><a href={`/technical-notes/${latestNote.id}/`}>{latestNote.data.title}</a></h3>
+						<p>{latestNote.data.summary}</p>
+						<a href={`/technical-notes/${latestNote.id}/`}>Read the note →</a>
+					</div>
+					<div class="card">
+						<span class="eyebrow">Free Tool</span>
+						<img
+							src="/images/robot-mower-calculator.png"
+							alt="Robotic Mowing Business Case Generator, comparing conventional mowing with a hybrid robotic strategy"
+							style="width:100%; height:auto; border-radius:8px; margin-bottom:1rem; border:1px solid var(--color-border);"
+						/>
+						<h3>Robotic Mowing Business Case Calculator</h3>
+						<p>
+							Compare conventional mowing with a hybrid robotic strategy using your own figures,
+							see installed cost, annual savings, and greenkeeper capacity released.
+						</p>
+						<a
+							href="https://mckinley77.github.io/robot-mower-business-case/"
+							target="_blank"
+							rel="noopener"
+						>
+							Try the calculator →
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
