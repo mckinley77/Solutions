@@ -451,18 +451,40 @@ p {
 
 	.nav-toggle {
 		display: inline-flex;
+		flex-direction: column-reverse;
+		align-items: flex-end;
+		gap: 0.2rem;
+		border: none;
+		background: none;
+		padding: 0;
 	}
 
 	.site-header__top {
-		align-items: flex-start;
-		gap: 0.75rem;
+		display: grid;
+		grid-template-columns: 1fr auto;
+		grid-template-areas:
+			"text logo"
+			"text actions";
+		align-items: start;
+		column-gap: 0.75rem;
+		row-gap: 0.4rem;
 		padding: 0.75rem 1rem;
 	}
 
+	.brand {
+		display: contents;
+	}
+
+	.brand__text {
+		grid-area: text;
+	}
+
 	.site-header__actions {
+		grid-area: actions;
 		flex-direction: column;
 		align-items: flex-end;
 		gap: 0.3rem;
+		justify-self: end;
 	}
 
 	.site-header__actions .btn {
@@ -475,11 +497,9 @@ p {
 	}
 
 	.brand__logo {
-		height: 38px;
-	}
-
-	.brand {
-		gap: 0.55rem;
+		grid-area: logo;
+		justify-self: end;
+		height: 64px;
 	}
 
 	.site-header__bottom {
