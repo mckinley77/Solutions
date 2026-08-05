@@ -107,6 +107,11 @@ const latestNote = (await getCollection('technical-notes')).sort(
 						<p class="note-card__meta">Technical Note {latestNote.data.number}</p>
 						<h3><a href={`/technical-notes/${latestNote.id}/`}>{latestNote.data.title}</a></h3>
 						<p>{latestNote.data.summary}</p>
+						<img
+							src="/images/kress-mega-600.jpg"
+							alt="A Kress Mega 600 robotic mower cutting a fairway"
+							style="width:100%; height:auto; border-radius:8px; margin-bottom:1rem;"
+						/>
 						<a href={`/technical-notes/${latestNote.id}/`}>Read the note →</a>
 					</div>
 					<div class="card">
