@@ -34,6 +34,20 @@ html {
 	font-size: 125%;
 }
 
+@media (max-width: 640px) {
+	html {
+		font-size: 100%;
+	}
+
+	body {
+		line-height: 1.5;
+	}
+
+	p {
+		margin-bottom: 0.85em;
+	}
+}
+
 body {
 	margin: 0;
 	font-family: var(--font-sans);
