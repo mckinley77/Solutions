@@ -87,8 +87,18 @@ practice is what keeps a club affordable. It isn't what makes a club feel worthy
 - A well-run environmental programme isn't a cost fighting the greens budget for funds. Done well,
   it shrinks the area that needs intensive, expensive upkeep.
 
-![A white Kress robotic mower cutting a golf course fairway](/images/technical-notes/technical-note-10-mower-kress.jpg)
-![An orange Husqvarna robotic mower parked on a sunlit fairway](/images/technical-notes/technical-note-10-mower-husqvarna.jpg)
+<div style="display:flex; flex-wrap:wrap; gap:1.5rem; margin:1.75em 0;">
+	<img
+		src="/images/technical-notes/technical-note-10-mower-kress.jpg"
+		alt="A white Kress robotic mower cutting a golf course fairway"
+		style="flex:1 1 16rem; width:100%; height:260px; object-fit:cover; border-radius:8px; border:1px solid var(--color-border); box-shadow:var(--shadow); margin:0;"
+	/>
+	<img
+		src="/images/technical-notes/technical-note-10-mower-husqvarna.jpg"
+		alt="An orange Husqvarna robotic mower parked on a sunlit fairway"
+		style="flex:1 1 16rem; width:100%; height:260px; object-fit:cover; border-radius:8px; border:1px solid var(--color-border); box-shadow:var(--shadow); margin:0;"
+	/>
+</div>
 
 Two makes, one shift in course management: robotic fairway mowing. Environmental sustainability
 and financial sustainability aren't two separate causes competing for a committee's time. Often,
