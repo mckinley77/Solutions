@@ -171,7 +171,10 @@ members actually use.
 
 <p class="pull-quote" aria-hidden="true">Augusta itself closes for months after the tournament just to recover. What we see on television is a highly engineered, once-a-year show, not a realistic maintenance standard.</p>
 
-<img src="/images/technical-notes/technical-note-10-kirkistown.jpg" alt="A gorse-lined links fairway at Kirkistown, firm and natural rather than manicured, with a Martello tower on the dunes beyond" style="width:100%;" />
+<picture>
+	<source media="(min-width: 641px)" srcset="/images/technical-notes/technical-note-10-kirkistown-desktop.jpg">
+	<img src="/images/technical-notes/technical-note-10-kirkistown.jpg" alt="A gorse-lined links fairway at Kirkistown, firm and natural rather than manicured, with a Martello tower on the dunes beyond" style="width:100%;" />
+</picture>
 
 There are better models closer to home. Most golfers admire the great links courses, Royal
 Portrush, Royal County Down, Portstewart, Kirkistown, even though these courses are firm, often
