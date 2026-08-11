@@ -35,6 +35,8 @@ Handled less well, those same costs flow straight into subs, which rise faster t
 Members don't renew, or don't join at all, often the younger ones a club needs most. The
 membership ages and shrinks and course condition is the first thing to suffer once income drops.
 
+<p class="pull-quote" aria-hidden="true">Most members never see this trend that can be very gradual. They just feel it: things seem to get a little worse, and a little more expensive, every year.</p>
+
 Most members never see this trend, which can be very gradual. They just feel it: things seem to
 get a little worse, and a little more expensive, every year. They think it's inevitable. The good
 news is this is entirely avoidable, and the clubs that are thriving tend to adopt sustainability
@@ -52,6 +54,8 @@ and whoever did know has since left the committee, retired, or passed on.
 This isn't a small gap. It's the reason so much course work costs more than it should, and why so
 many good intentions quietly come to nothing. Without a tree survey, the wrong trees get cut down
 and the wrong species get planted back in their place.
+
+<p class="pull-quote" aria-hidden="true">Committees change every year or two, and each new committee often starts again with its own ideas, rather than picking up a plan left by the last one.</p>
 
 Without drainage or irrigation records, contractors dig up pipes that didn't need replacing, or
 worse, sever a working irrigation line that nobody knew was there, a repair bill that a five-minute
@@ -115,7 +119,17 @@ By late 2025, over 100 clubs across Ireland had joined the related Sustainabilit
 Programme. Biodiversity mapping is now complete on dozens of courses. More clubs are tracking
 energy, water and input use as routine practice, and reaping the benefits.
 
+<div class="stat-callout" aria-hidden="true">
+	<span class="stat">100+</span>
+	<span class="stat-label">clubs across Ireland in the Sustainability Leaders Programme</span>
+</div>
+
 ## Too much water, then too little
+
+<picture>
+	<source media="(min-width: 641px)" srcset="/images/technical-notes/technical-note-10-deluge-drought-landscape.jpg">
+	<img src="/images/technical-notes/technical-note-10-deluge-drought-portrait.jpg" alt="The same green pictured twice: waterlogged and puddled after autumn rain, then parched and drought-stressed the following summer" />
+</picture>
 
 Drainage is usually seen as a winter problem: a waterlogged course, lost income through course
 closures, members frustrated by casual water on the fairways, damage and repairs delaying the
@@ -125,6 +139,8 @@ But the same root issue, climate change, now works against clubs in other ways, 
 summers become more common. Few clubs here have a natural water supply. Few can afford a borehole,
 and many have ageing or ineffective irrigation systems. So drought resilience has to come from how
 the ground itself is managed, not from simply irrigating the problem away.
+
+<p class="pull-quote" aria-hidden="true">Good drainage and good drought resilience turn out to be the same job, seen at different times of year.</p>
 
 Good drainage and good drought resilience turn out to be the same job, seen at different times of
 year. Vertidraining in late summer and autumn opens up compacted rootzones after the main playing
@@ -156,6 +172,8 @@ high-maintenance planting in places nobody ever plays from. None of it improves 
 it costs money and staff time that would be better spent on the greens, tees and fairways that
 members actually use.
 
+<p class="pull-quote" aria-hidden="true">Augusta itself closes for months after the tournament just to recover. What we see on television is a highly engineered, once-a-year show, not a realistic maintenance standard.</p>
+
 ![A gorse-lined links fairway at Kirkistown, firm and natural rather than manicured, with a Martello tower on the dunes beyond](/images/technical-notes/technical-note-10-kirkistown.jpg)
 
 There are better models closer to home. Most golfers admire the great links courses, Royal
@@ -181,6 +199,11 @@ but a real chance of becoming and staying exactly the kind of club its members a
 
 A fuller look at what this means for wildlife, habitat and the case for a club environmental
 committee will follow in a separate piece.
+
+<picture>
+	<source media="(min-width: 641px)" srcset="/images/technical-notes/technical-note-10-closing-desktop.jpg">
+	<img src="/images/technical-notes/technical-note-10-closing-mobile.jpg" alt="A tree-lined fairway curving down to a green beside a pond, in warm evening light" />
+</picture>
 
 ## Related publications
 
