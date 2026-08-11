@@ -25,7 +25,7 @@ environmentally.
 ## Two directions
 
 Very few clubs are at risk of closing and golf is thriving again in Ireland. It's about which of
-two directions a club drifts in over time.
+two directions a club evolves over time.
 
 With the right approach, rising costs can get absorbed or mitigated through good management.
 Fuel, wages, machinery, materials, are costs a club has real influence over, not increases that
@@ -119,10 +119,7 @@ By late 2025, over 100 clubs across Ireland had joined the related Sustainabilit
 Programme. Biodiversity mapping is now complete on dozens of courses. More clubs are tracking
 energy, water and input use as routine practice, and reaping the benefits.
 
-<div class="stat-callout" aria-hidden="true">
-	<span class="stat">100+</span>
-	<span class="stat-label">clubs across Ireland in the Sustainability Leaders Programme</span>
-</div>
+<p class="pull-quote" aria-hidden="true">100+ clubs across Ireland in the Sustainability Leaders Programme.</p>
 
 ## Too much water, then too little
 
@@ -174,7 +171,7 @@ members actually use.
 
 <p class="pull-quote" aria-hidden="true">Augusta itself closes for months after the tournament just to recover. What we see on television is a highly engineered, once-a-year show, not a realistic maintenance standard.</p>
 
-![A gorse-lined links fairway at Kirkistown, firm and natural rather than manicured, with a Martello tower on the dunes beyond](/images/technical-notes/technical-note-10-kirkistown.jpg)
+<img src="/images/technical-notes/technical-note-10-kirkistown.jpg" alt="A gorse-lined links fairway at Kirkistown, firm and natural rather than manicured, with a Martello tower on the dunes beyond" style="width:100%;" />
 
 There are better models closer to home. Most golfers admire the great links courses, Royal
 Portrush, Royal County Down, Portstewart, Kirkistown, even though these courses are firm, often
