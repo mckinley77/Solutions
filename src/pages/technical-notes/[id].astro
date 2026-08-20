@@ -24,11 +24,6 @@ const dateLabel = new Intl.DateTimeFormat('en-IE', { dateStyle: 'long' }).format
 				Technical Note {note.data.number} · {dateLabel}
 			</p>
 			<h1>{note.data.title}</h1>
-			<div>
-				{note.data.tags.map((tag) => (
-					<span class="tag">{tag}</span>
-				))}
-			</div>
 			<div class="prose" style="margin-top:2rem;">
 				<Content />
 			</div>
