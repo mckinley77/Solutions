@@ -128,9 +128,11 @@ The calculator then estimates:
 
 It also produces a committee-ready Golf Robotic Mowing Business Case summarising the results.
 
-![The Robotic Mowing Business Case Generator, showing site and machinery inputs alongside an automatically-updating summary of robotic mowers required, installed system cost, annual cash saving, greenkeeper capacity released, and its annual value](/images/technical-notes/business-case-generator.png)
+<a href="https://mckinley77.github.io/robot-mower-business-case/" target="_blank" rel="noopener">![The Robotic Mowing Business Case Generator, showing site and machinery inputs alongside an automatically-updating summary of robotic mowers required, installed system cost, annual cash saving, greenkeeper capacity released, and its annual value](/images/technical-notes/business-case-generator.png)</a>
 
 ![The opening page of a completed Robotic Mowing Business Case document, with an executive summary, an explanation of the real value of robotic mowing, and a summary-of-results table](/images/technical-notes/completed-business-case.png)
+
+<p><strong><a href="https://mckinley77.github.io/robot-mower-business-case/" target="_blank" rel="noopener">Try the calculator →</a></strong></p>
 
 ## Final thoughts
 
