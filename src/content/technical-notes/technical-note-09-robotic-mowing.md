@@ -132,7 +132,7 @@ It also produces a committee-ready Golf Robotic Mowing Business Case summarising
 
 ![The opening page of a completed Robotic Mowing Business Case document, with an executive summary, an explanation of the real value of robotic mowing, and a summary-of-results table](/images/technical-notes/completed-business-case.png)
 
-<p><strong><a href="https://mckinley77.github.io/robot-mower-business-case/" target="_blank" rel="noopener">Try the calculator →</a></strong></p>
+<p><a class="btn btn--primary" href="https://mckinley77.github.io/robot-mower-business-case/" target="_blank" rel="noopener">Try the calculator →</a></p>
 
 ## Final thoughts
 
