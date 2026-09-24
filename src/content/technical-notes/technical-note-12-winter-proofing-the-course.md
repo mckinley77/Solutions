@@ -120,26 +120,28 @@ Robotic mowing is directly relevant to winter-proofing. A lightweight robot plac
 
 [Technical Note 8](/technical-notes/technical-note-08-the-biggest-change-in-50-years/) and [Technical Note 9](/technical-notes/technical-note-09-robotic-mowing/) looked at robotic mowing in more detail. For clubs now considering robots, there are increasingly competitive purchase and lease options available.
 
-## Current robot offers, September 2026
+## Current robot offers - September 2026
 
 <div style="display:flex; flex-wrap:wrap; gap:1.5rem; margin:1.75em 0;">
 	<div class="card" style="flex:1 1 16rem; margin:0;">
-		<p><strong>Husqvarna CEORA 544 EPOS</strong></p>
-		<p>The current Lease Plus offer starts from £356.13 per month, including installation, maintenance, repairs and theft insurance. Clubs should obtain a site-specific written quotation confirming VAT, EPOS equipment, contract duration and end-of-lease conditions.</p>
+		<p><strong>Husqvarna CEORA 544 EPOS / RZ43L / CS4</strong></p>
+		<p>The current Lease Plus offer starts from £427 per month, including VAT, installation, maintenance, repairs and theft insurance. This has a listed working capacity of 9,500 m² over 12 hours.</p>
+		<p>Clubs should obtain a site-specific written quotation confirming VAT, EPOS equipment, contract duration and end-of-lease conditions.</p>
 	</div>
 	<div class="card" style="flex:1 1 16rem; margin:0;">
-		<p><strong>Kress MasterSeries Mega 600</strong></p>
-		<p>Kress's new fairway mower is listed at £36,696 including VAT, with a quoted capacity of approximately 22,000 m² in 12 hours or 88,000 m² over 48 hours. Clubs should check the complete installed price, servicing arrangements, local support and warranty before comparing it with other machines.</p>
+		<p><strong>Kress MasterSeries Mega 600 KR238EG</strong></p>
+		<p>Kress's new fairway mower is listed at £36,696 including VAT, with a quoted capacity of approximately 22,000 m² in 12 hours.</p>
+		<p>Clubs should check the complete installed price, servicing arrangements, local support and warranty before comparing it with other machines. Lease options may be available.</p>
 	</div>
 </div>
 
 <p style="text-align:center; font-size:0.85rem; font-style:italic; color:var(--color-body); opacity:0.7;">Prices and offers checked September 2026 and subject to change.</p>
 
-## A little work now
+## A little work now can yield great results
 
-None of these measures are complicated or expensive. Most are simply about managing turf, traffic and machinery more carefully.
+None of the measures outlined in this article are complicated or expensive. Most are simply about managing turf, traffic and machinery more carefully.
 
-We have around seven months of wet and windy golf ahead. A little work now can mean a drier, more enjoyable course this winter, and a much better course to start with next spring.
+We have around seven months of wet and windy golf ahead. A little work now can mean a drier, more enjoyable course this winter - and a much better course to start with next spring.
 
 *Simple Solutions are Often the Best.*
 
