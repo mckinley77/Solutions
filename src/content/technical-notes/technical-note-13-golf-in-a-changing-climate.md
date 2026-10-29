@@ -156,7 +156,7 @@ So storms are no more frequent than they were, but each one now carries more rai
 
 Warm air holds more moisture than cold air, about 7% more for every degree of warming. A storm crossing the Atlantic today therefore carries more water than the same storm would have carried forty years ago, and drops more of it when it arrives.
 
-There is a second effect. As that moisture condenses into rain it releases heat, and that heat gives the storm more energy. So the rain is not simply heavier; the storm itself can be more vigorous. In short, intense bursts, the sort that overwhelm a drainage system in an afternoon, rainfall can rise at around twice the 7% rate [[36](https://doi.org/10.1098/rsta.2019.0542)].
+There is a second effect. As that moisture condenses into rain it releases heat, and that heat gives the storm more energy. So the rain is not simply heavier; the storm itself can be more vigorous. The effect is strongest in short, intense bursts — the sort that overwhelm a drainage system in an afternoon — where rainfall can rise at around twice the 7% rate [[36](https://doi.org/10.1098/rsta.2019.0542)].
 
 It also falls differently. The extra moisture tends to arrive in heavier bursts rather than as steadier rain, with fewer days of light rain in between [[38](https://doi.org/10.1111/nyas.14337)]. For a drainage system that is the harder pattern: the same annual total delivered in fewer, sharper events.
 
