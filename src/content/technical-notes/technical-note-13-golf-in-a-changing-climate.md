@@ -5,6 +5,7 @@ date: 2026-10-29
 summary: "What heavier storms and wetter winters mean for our courses: the evidence on how rainfall and storms have actually changed in Northern Ireland and across the UK, and by how much."
 tags: ["climate change", "rainfall", "storms", "drainage"]
 thumbnail: "/images/technical-notes/technical-note-13-hero.jpg"
+ogImage: "/images/og-tn13.png"
 draft: false
 ---
 
