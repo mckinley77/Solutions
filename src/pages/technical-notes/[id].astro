@@ -12,10 +12,12 @@ export async function getStaticPaths() {
 
 const { note } = Astro.props;
 const { Content } = await render(note);
+// Social preview image: per-note ogImage, else the note's thumbnail, else the site hero photo.
+const ogImage = note.data.ogImage ?? note.data.thumbnail ?? '/images/hero.jpg';
 const dateLabel = new Intl.DateTimeFormat('en-IE', { dateStyle: 'long' }).format(note.data.date);
 ---
 
-<BaseLayout title={`Technical Note ${note.data.number}: ${note.data.title}`} description={note.data.summary}>
+<BaseLayout title={`Technical Note ${note.data.number}: ${note.data.title}`} description={note.data.summary} ogType="article" ogImage={ogImage}>
 	<article class="section">
 		<div class="container" style="max-width:60rem;">
 			<a href="/technical-notes/">← All Technical Notes</a>

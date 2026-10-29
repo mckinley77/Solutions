@@ -10,6 +10,7 @@ const technicalNotes = defineCollection({
 		summary: z.string(),
 		tags: z.array(z.string()).default([]),
 		thumbnail: z.string().optional(),
+		ogImage: z.string().optional(),
 		draft: z.boolean().default(false),
 	}),
 });

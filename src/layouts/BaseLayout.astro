@@ -6,10 +6,13 @@ import '../styles/global.css';
 interface Props {
 	title: string;
 	description: string;
+	ogType?: 'website' | 'article';
+	ogImage?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, ogType = 'website', ogImage } = Astro.props;
 const pageTitle = `${title} | Simple Solutions for Sustainable Golf`;
+const ogImageUrl = ogImage ? new URL(ogImage, Astro.site).toString() : undefined;
 ---
 
 <html lang="en">
@@ -24,7 +27,12 @@ const pageTitle = `${title} | Simple Solutions for Sustainable Golf`;
 		<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).toString()} />
 		<meta property="og:title" content={pageTitle} />
 		<meta property="og:description" content={description} />
-		<meta property="og:type" content="website" />
+		<meta property="og:type" content={ogType} />
+		{ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
+		{ogImageUrl && <meta name="twitter:card" content="summary_large_image" />}
+		{ogImageUrl && <meta name="twitter:title" content={pageTitle} />}
+		{ogImageUrl && <meta name="twitter:description" content={description} />}
+		{ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}
 		<script
 			is:inline
 			data-goatcounter="https://mmcksolutions.goatcounter.com/count"
