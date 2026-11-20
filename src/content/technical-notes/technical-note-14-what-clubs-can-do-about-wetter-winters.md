@@ -5,6 +5,7 @@ date: 2026-11-20
 summary: "Most of the solutions cost very little or nothing, just simple changes to course management: finding and restoring the drainage you already have, managing traffic, keeping grass short, timing aeration, taking weight off the course and looking hard at the trees."
 tags: ["winter golf", "drainage", "course management", "robotic mowing", "trees"]
 thumbnail: "/images/technical-notes/technical-note-14-hero.jpg"
+ogImage: "/images/og-tn14.png"
 draft: false
 ---
 
@@ -155,7 +156,9 @@ A conventional fairway mower, with fuel and operator, can weigh up to two tonnes
 
 The usual argument for robots is labour and fuel. In my view the bigger prize is simpler: more days on which mowing is possible, and therefore more days on which the course plays well. Frequent light cutting also produces denser, finer, drier turf, and the reduction in traffic protects the drainage investment a club has already made. Staff hours released go into work that lasts: maintaining drains, blowing leaves with a backpack rather than a tractor-mounted unit on soft ground, bunkers, woodland, presentation.
 
-For most clubs the sensible route in the short term is a hybrid one: robots on the wettest and most vulnerable fairways, conventional machines retained for drier areas, striping, events and periods of rapid growth. [Technical Notes](/technical-notes/) 8 and 9 cover this in detail, and the business case calculator at [mmck.solutions](https://mckinley77.github.io/robot-mower-business-case/) will produce a committee-ready comparison from your own figures.
+For most clubs the sensible route in the short term is a hybrid one: robots on the wettest and most vulnerable fairways, conventional machines retained for drier areas, striping, events and periods of rapid growth. [Technical Notes](/technical-notes/) 8 and 9 cover this in detail, and the business case calculator will produce a committee-ready comparison from your own figures.
+
+<p><a class="btn btn--primary" href="https://mckinley77.github.io/robot-mower-business-case/" target="_blank" rel="noopener">Try the calculator →</a></p>
 
 **Less weight means less damage, and a longer cutting season.**
 
