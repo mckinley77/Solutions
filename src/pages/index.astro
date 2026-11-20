@@ -9,6 +9,9 @@ const notes = (await getCollection('technical-notes'))
 const latestNote = (await getCollection('technical-notes')).sort(
 	(a, b) => b.data.number - a.data.number
 )[0];
+
+// Announcement strip above the hero: says "Just published" for six weeks after a note's date, then "Latest".
+const isRecent = latestNote && Date.now() - latestNote.data.date.getTime() < 42 * 24 * 60 * 60 * 1000;
 ---
 
 <BaseLayout
@@ -16,6 +19,17 @@ const latestNote = (await getCollection('technical-notes')).sort(
 	description="Simple Solutions for Sustainable Golf - practical drainage and sustainability guidance for golf courses managing wet winters and short playing seasons, led by Maurice McKinley BSc CEng MICE."
 >
 	<section class="hero">
+		{latestNote && !latestNote.data.draft && (
+			<a class="announce" href={`/technical-notes/${latestNote.id}/`}>
+				<span class="container announce__inner">
+					<span class="announce__label">{isRecent ? 'Just published' : 'Latest'}</span>
+					<span class="announce__text">
+						Technical Note {latestNote.data.number}: <strong>{latestNote.data.title}</strong>
+					</span>
+					<span class="announce__cta">Read it →</span>
+				</span>
+			</a>
+		)}
 		<div class="hero__banner">
 			<img
 				class="hero__banner-image"
