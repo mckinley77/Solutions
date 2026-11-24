@@ -3,14 +3,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
-	const notes = await getCollection('technical-notes');
-	return notes.map((note) => ({
+	const notes = (await getCollection('technical-notes')).sort((a, b) => a.data.number - b.data.number);
+	return notes.map((note, i) => ({
 		params: { id: note.id },
-		props: { note },
+		props: { note, prev: notes[i - 1], next: notes[i + 1] },
 	}));
 }
 
-const { note } = Astro.props;
+const { note, prev, next } = Astro.props;
 const { Content } = await render(note);
 // Social preview image: per-note ogImage, else the note's thumbnail, else the site hero photo.
 const ogImage = note.data.ogImage ?? note.data.thumbnail ?? '/images/hero.jpg';
@@ -29,6 +29,20 @@ const dateLabel = new Intl.DateTimeFormat('en-IE', { dateStyle: 'long' }).format
 			<div class="prose" style="margin-top:2rem;">
 				<Content />
 			</div>
+			<nav class="note-nav" aria-label="Adjacent Technical Notes">
+				{prev && (
+					<a class="note-nav__link note-nav__link--prev" href={`/technical-notes/${prev.id}/`} rel="prev">
+						<span class="note-nav__label">← Previous: Technical Note {prev.data.number}</span>
+						<span class="note-nav__title">{prev.data.title}</span>
+					</a>
+				)}
+				{next && (
+					<a class="note-nav__link note-nav__link--next" href={`/technical-notes/${next.id}/`} rel="next">
+						<span class="note-nav__label">Next: Technical Note {next.data.number} →</span>
+						<span class="note-nav__title">{next.data.title}</span>
+					</a>
+				)}
+			</nav>
 		</div>
 	</article>
 </BaseLayout>

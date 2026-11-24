@@ -147,5 +147,5 @@ We have around seven months of wet and windy golf ahead. A little work now can m
 
 ## Related publications
 
-- Technical Note 8, *The Biggest Change in Golf Course Maintenance for 50 Years?*
-- Technical Note 9, *The Business Case for Robotic Mowing*
+- [Technical Note 8](/technical-notes/technical-note-08-the-biggest-change-in-50-years/), *The Biggest Change in Golf Course Maintenance for 50 Years?*
+- [Technical Note 9](/technical-notes/technical-note-09-robotic-mowing/), *The Business Case for Robotic Mowing*

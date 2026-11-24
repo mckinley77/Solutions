@@ -152,6 +152,5 @@ Only by considering both can the overall business case for robotic mowing be pro
 
 ## Related publications
 
-- Technical Note 8, *The Biggest Change in 50 Years*
-- Golf Robot Business Case Calculator
-- TN9, *Instructions for Using the Calculator*
+- [Technical Note 8](/technical-notes/technical-note-08-the-biggest-change-in-50-years/), *The Biggest Change in Golf Course Maintenance for 50 Years?*
+- [Golf Robot Business Case Calculator](https://mckinley77.github.io/robot-mower-business-case/)

@@ -121,5 +121,5 @@ And go easy on new planting. Tighten the course where it will genuinely challeng
 
 ## Related publications
 
-- Technical Note 8, *The Biggest Change in Golf Course Maintenance for 50 Years?*
-- Technical Note 10, *Can the Sustainable Golf Course Keep Costs Down?*
+- [Technical Note 8](/technical-notes/technical-note-08-the-biggest-change-in-50-years/), *The Biggest Change in Golf Course Maintenance for 50 Years?*
+- [Technical Note 10](/technical-notes/technical-note-10-can-sustainability-cut-costs/), *Can the Sustainable Golf Course Keep Costs Down?*
