@@ -14,7 +14,7 @@ Ask around the clubhouse and you get something different. Next year will be bett
 
 ## What the records show
 
-Going back through the Met Office rainfall series for Northern Ireland and Scotland, which run from 1836. Six things stand out.
+I went back through the Met Office rainfall series for Northern Ireland and Scotland, which run from 1836. Six things stand out.
 
 1. **Winters are wetter.** Set the three standard 30-year climate periods against each other and autumn and winter rainfall is up 7% in Northern Ireland and 16% in Scotland. Measured as a trend across the full record since 1932 the rise is larger still, about 14% here and 27% in Scotland. Across the UK the October to March half-year is now 13% wetter than it was in 1961–1990.
 2. **The wettest seasons are bunching up.** Five of the ten wettest September-to-February seasons in Northern Ireland since 1836 have come since 2012.
@@ -51,7 +51,7 @@ The same winter a club coped with in 1990 now does more damage, takes longer to 
 
 Dunmurry Golf Club is built on heavy clay and ought to have been among the worst affected. Years of sanding and vertidraining the fairways kept closures to 32 days, and the club has invested in targeted drainage in the problem areas.
 
-At Killymoon Golf Club, a switch to lightweight robotic mowers has reduced machinery damage and improved turf quality and permeability. Cutting fairways when traditional machines cannot.
+At Killymoon Golf Club, a switch to lightweight robotic mowers has reduced machinery damage and improved turf quality and permeability, with fairways cut when traditional machines cannot.
 
 Neither did anything complicated. Both did something consistently, over several years and more, which is the part most clubs find hardest.
 
@@ -79,7 +79,7 @@ And keep your own rainfall and closure records, so that next time you are arguin
 
 A fully referenced version of this article, with all the data and sources, is Technical Note 13: [Golf in a Changing Climate](/technical-notes/technical-note-13-golf-in-a-changing-climate/).
 
-A second article will look at what clubs can do about it, within the budgets and staff available, including how to get the best from drainage already in the ground. That is now [Technical Note 14: What Clubs Can Do About Wetter Winters](/technical-notes/technical-note-14-what-clubs-can-do-about-wetter-winters/).
+A second article will look at what clubs can do about it, within the budgets and staff available, including how to get the best from drainage already in the ground.
 
 ## Sources
 
