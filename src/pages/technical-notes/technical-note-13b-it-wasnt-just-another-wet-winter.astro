@@ -1,0 +1,29 @@
+---
+// Technical Note 13b: a short version of TN13 written for BIGGA. It is deliberately NOT in the
+// technical-notes collection, so it stays out of the notes index, the prev/next links and the
+// homepage "Just published" strip. Reach it via the short URL /TN13b (see [redirects].ts).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { Content, frontmatter } from '../../unlisted/technical-note-13b.md';
+---
+
+<BaseLayout
+	title={`Technical Note 13b: ${frontmatter.title}`}
+	description={frontmatter.summary}
+	ogType="article"
+	ogImage="/images/og-tn13.png"
+	noindex
+>
+	<article class="section">
+		<div class="container" style="max-width:60rem;">
+			<a href="/technical-notes/">← All Technical Notes</a>
+			<p class="note-card__meta" style="margin-top:1.5rem;">
+				Technical Note 13b · Short version of <a href="/technical-notes/technical-note-13-golf-in-a-changing-climate/">Technical Note 13</a>
+			</p>
+			<h1>{frontmatter.title}</h1>
+			<p class="lede">Maurice McKinley BSc CEng MICE, Civil Engineer and Drainage Advisor</p>
+			<div class="prose" style="margin-top:2rem;">
+				<Content />
+			</div>
+		</div>
+	</article>
+</BaseLayout>

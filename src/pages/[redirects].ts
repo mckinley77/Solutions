@@ -17,5 +17,8 @@ export const GET: APIRoute = async () => {
 		lines.push(`/tn${note.data.number}  ${target}  301`);
 		lines.push(`/TN${note.data.number}  ${target}  301`);
 	}
+	// Unlisted pages that live outside the collection.
+	const tn13b = '/technical-notes/technical-note-13b-it-wasnt-just-another-wet-winter/';
+	for (const path of ['/tn13b', '/TN13b', '/TN13B']) lines.push(`${path}  ${tn13b}  301`);
 	return new Response(lines.join('\n') + '\n', { headers: { 'Content-Type': 'text/plain' } });
 };

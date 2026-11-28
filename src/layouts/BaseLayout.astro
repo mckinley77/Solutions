@@ -8,9 +8,11 @@ interface Props {
 	description: string;
 	ogType?: 'website' | 'article';
 	ogImage?: string;
+	/** Keep the page out of search engines (e.g. an unlisted article also published elsewhere). */
+	noindex?: boolean;
 }
 
-const { title, description, ogType = 'website', ogImage } = Astro.props;
+const { title, description, ogType = 'website', ogImage, noindex = false } = Astro.props;
 const pageTitle = `${title} | Simple Solutions for Sustainable Golf`;
 const ogImageUrl = ogImage ? new URL(ogImage, Astro.site).toString() : undefined;
 ---
@@ -24,6 +26,7 @@ const ogImageUrl = ogImage ? new URL(ogImage, Astro.site).toString() : undefined
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 		<meta name="description" content={description} />
+		{noindex && <meta name="robots" content="noindex" />}
 		<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).toString()} />
 		<meta property="og:title" content={pageTitle} />
 		<meta property="og:description" content={description} />
